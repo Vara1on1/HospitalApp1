@@ -1,0 +1,48 @@
+﻿<Page x:Class="HospitalApp.Views.Pages.BreakRecordPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HospitalApp.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BreakRecordPage">
+
+    <Grid Background="GhostWhite">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="500">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0, 0, 0, 30">
+                <TextBlock>
+                    Имя врача
+                </TextBlock>
+                <ComboBox x:Name="EventDoctorComboBox" Width="200" Margin="5,0,20,0">
+
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0, 0, 0, 30">
+                <TextBlock>
+                    Тип события
+                </TextBlock>
+                <ComboBox x:Name="EventTypeComboBox" Width="200" Margin="5,0,20,0">
+                    
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0, 0, 0, 30">
+                <TextBlock>
+                    Время начала события
+                </TextBlock>
+                <TextBox x:Name="EventStartTimeTextBox" Width="200" Margin="5,0,20,0">
+                    
+                </TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock>
+                   Продолжительность (мин.)
+                </TextBlock>
+                <TextBox x:Name="EventDurationTextBox" Width="200" Margin="5,0,20,0">
+
+                </TextBox>
+            </StackPanel>
+            <Button Background="#FF186A18"  Content="Сформировать расписание" x:Name="CreateSheduleButton" Click="CreateSheduleButton_Click" Width="200" Height="35" Margin="0, 50, 0, 0" Foreground="White"/>
+        </StackPanel>  
+    </Grid>
+</Page>
